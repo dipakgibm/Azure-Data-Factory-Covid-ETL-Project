@@ -19,6 +19,10 @@
 			"type": "string",
 			"defaultValue": "https://coviddeltalakesa.dfs.core.windows.net/"
 		},
+		"population_sa_trigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/ec2120be-b93a-48a5-aa7f-33543b17f6c0/resourceGroups/CovidProject/providers/Microsoft.Storage/storageAccounts/covidpsa"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -54,6 +58,9 @@
 					},
 					"ls_datalake_properties_typeProperties_url": {
 						"value": "[parameters('ls_datalake_properties_typeProperties_url')]"
+					},
+					"population_sa_trigger_properties_typeProperties_scope": {
+						"value": "[parameters('population_sa_trigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
