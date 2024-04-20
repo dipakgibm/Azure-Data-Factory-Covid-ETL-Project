@@ -1,0 +1,9 @@
+{
+	"name": "CovidADFUdemy",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4dce8e51-c76c-4fdb-8823-e6df47ec2891",
+		"tenantId": "b485091f-db30-4246-a63c-d6e42a049336"
+	}
+}
