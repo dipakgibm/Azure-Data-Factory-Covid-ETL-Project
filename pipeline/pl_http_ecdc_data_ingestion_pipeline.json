@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy ecdc death case https data",
+				"name": "Copy ecdc covid data from https",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -57,11 +57,11 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_ecdc_data_case_death_http",
+						"referenceName": "ds_ecdc_data_death_http",
 						"type": "DatasetReference",
 						"parameters": {
 							"relative_url": {
-								"value": "@variables('source_url')",
+								"value": "@pipeline().parameters.source_url",
 								"type": "Expression"
 							}
 						}
@@ -69,11 +69,11 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_death_case_http_dl",
+						"referenceName": "ds_ecdc_covid_data_dl",
 						"type": "DatasetReference",
 						"parameters": {
 							"file_name": {
-								"value": "@variables('sink_filename')",
+								"value": "@pipeline().parameters.sink_filename",
 								"type": "Expression"
 							}
 						}
