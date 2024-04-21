@@ -8,6 +8,10 @@
 		"parameters": {
 			"relative_url": {
 				"type": "string"
+			},
+			"baseURL": {
+				"type": "string",
+				"defaultValue": "https://raw.githubusercontent.com"
 			}
 		},
 		"annotations": [],
