@@ -44,10 +44,9 @@
 						]
 					}
 				],
-				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Lookup1').output.value",
+						"value": "@activity('Look up file for ECDC data').output.value",
 						"type": "Expression"
 					},
 					"isSequential": false,
@@ -63,16 +62,7 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [
-								{
-									"name": "source_url",
-									"value": "cloudboxacademy/covid19/main/ecdc_data/hospital_admissions.csv"
-								},
-								{
-									"name": "sink_filename",
-									"value": "hospital_admissions.csv"
-								}
-							],
+							"userProperties": [],
 							"typeProperties": {
 								"source": {
 									"type": "DelimitedTextSource",
