@@ -14,17 +14,11 @@
 		"ls_datalake_properties_typeProperties_url": {
 			"value": "https://coviddeltalakesa.dfs.core.windows.net/"
 		},
+		"ls_ecdc_cases_death_http_properties_typeProperties_url": {
+			"value": "@{linkedService().SourceBaseURL}"
+		},
 		"population_sa_trigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/ec2120be-b93a-48a5-aa7f-33543b17f6c0/resourceGroups/CovidProject/providers/Microsoft.Storage/storageAccounts/covidpsa"
-		},
-		"ls_ecdc_cases_death_http_properties_typeProperties_url": {
-			"value": "https://raw.githubusercontent.com"
-		},
-		"trigger_ingest_hospital_data_properties_pl_http_ecdc_data_ingestion_pipeline_parameters_source_url": {
-			"value": "cloudboxacademy/covid19/main/ecdc_data/cases_deaths.csv"
-		},
-		"trigger_ingest_hospital_data_properties_pl_http_ecdc_data_ingestion_pipeline_parameters_sink_filename": {
-			"value": "cases_deaths.csv"
 		},
 		"containerUri": {
 			"value": ""
