@@ -15,6 +15,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_datalake'"
 		},
+		"AzureSqlCovidDB_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlCovidDB'"
+		},
+		"AzureSqlcovid_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlcovid'"
+		},
 		"ls_datalake_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://coviddeltalakesa.dfs.core.windows.net/"
@@ -59,6 +67,12 @@
 					},
 					"ls_datalake_accountKey": {
 						"value": "[parameters('ls_datalake_accountKey')]"
+					},
+					"AzureSqlCovidDB_connectionString": {
+						"value": "[parameters('AzureSqlCovidDB_connectionString')]"
+					},
+					"AzureSqlcovid_connectionString": {
+						"value": "[parameters('AzureSqlcovid_connectionString')]"
 					},
 					"ls_datalake_properties_typeProperties_url": {
 						"value": "[parameters('ls_datalake_properties_typeProperties_url')]"

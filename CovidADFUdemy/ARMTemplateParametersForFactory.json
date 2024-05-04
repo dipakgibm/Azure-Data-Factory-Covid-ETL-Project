@@ -11,6 +11,12 @@
 		"ls_datalake_accountKey": {
 			"value": ""
 		},
+		"AzureSqlCovidDB_connectionString": {
+			"value": ""
+		},
+		"AzureSqlcovid_connectionString": {
+			"value": ""
+		},
 		"ls_datalake_properties_typeProperties_url": {
 			"value": "https://coviddeltalakesa.dfs.core.windows.net/"
 		},
